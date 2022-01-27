@@ -30,4 +30,4 @@ e.solution=Da(Number(localStorage.getItem('hack-wordle-solution')) || e.today)
 </script>
 ```
 
-3. send it to your children and enjoy your vocation
+3. Serve it on GitHub page. Send it to your children. And enjoy your vocation 🍺
