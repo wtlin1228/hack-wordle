@@ -10,18 +10,17 @@ e.solution=Da(Number(localStorage.getItem('hack-wordle-solution')) || e.today)
 2. add those to body of html
 
 ```html
-<input id="date" type="date">
+<input id="date" type="date" min="2022-01-01">
 
 <script>
-  const selectElement = document.querySelector('#date');
+  var selectElement = document.querySelector('#date');
 
-  const previousDate = localStorage.getItem('hack-wordle-solution');
+  var previousDate = localStorage.getItem('hack-wordle-solution');
   selectElement.value = new Date(Number(previousDate)).toISOString().split('T')[0];
 
   selectElement.addEventListener('change', (event) => {
     localStorage.removeItem('gameState');
     
-    console.log(event.target.value);
     const targetDate = new Date(event.target.value).getTime();
     localStorage.setItem('hack-wordle-solution', targetDate);
     
