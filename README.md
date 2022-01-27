@@ -16,7 +16,9 @@ e.solution=Da(Number(localStorage.getItem('hack-wordle-solution')) || e.today)
   var selectElement = document.querySelector('#date');
 
   var previousDate = localStorage.getItem('hack-wordle-solution');
-  selectElement.value = new Date(Number(previousDate)).toISOString().split('T')[0];
+  if (previousDate) {
+    selectElement.value = new Date(Number(previousDate)).toISOString().split('T')[0];
+  }
 
   selectElement.addEventListener('change', (event) => {
     localStorage.removeItem('gameState');
