@@ -1,3 +1,5 @@
+Want to enjoy your vacation? Do your children keep asking you play wordle with them? Follow those easy steps to build a wordle clone that can be play without waiting until next day 🍻
+
 1. change this line
 
 ```js
