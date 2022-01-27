@@ -10,7 +10,7 @@ e.solution=Da(Number(localStorage.getItem('hack-wordle-solution')) || e.today)
 2. add those to body of html
 
 ```html
-<input id="date" type="date" min="2022-01-01">
+<input id="date" type="date" min="2022-01-01" style="position: fixed; top: 10px; left: 10px">
 
 <script>
   var selectElement = document.querySelector('#date');
